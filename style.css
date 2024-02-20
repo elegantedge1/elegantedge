@@ -21,8 +21,7 @@ body{
   background-size: cover;
   background-position: center;
   animation: luck 5s linear infinite;
-  height:80%;
-  width:80%;
+
 }
 .container {
   height: 100vh;
@@ -137,6 +136,12 @@ html{
   }
   100% {
     opacity: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* Target mobile screens */
+  body {
+    background-size: contain; /* Resize to fit while maintaining aspect ratio */
   }
 }
 
