@@ -21,6 +21,8 @@ body{
   background-size: cover;
   background-position: center;
   animation: luck 5s linear infinite;
+  height:80%;
+  width:80%;
 }
 .container {
   height: 100vh;
