@@ -16,6 +16,11 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('path/to/your/best-of-luck.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: luck 5s linear infinite;
 }
 .container {
   height: 100vh;
@@ -94,6 +99,7 @@ body{
   background-color: var(--heart-color);
   border-radius: 50%;
 }
+
 .heart:before {
   top: -7.5px;
 }
@@ -113,3 +119,22 @@ body{
   transform: rotate(90deg);
   transition-delay: 0.4s;
 }
+html{
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+@keyframes luck {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
